@@ -10,3 +10,9 @@ class FullConnectedLayer():
         output_size: 本层输出向量的维度
         activator: 激活函数
         '''
+        self.input_size=input_size
+        self.output_size=output_size
+        self.activator=activator
+
+        self.W=np.random.uniform(-0.1,.1,(output_size,input_size))
+        self.b=np.zeros((output_size))
